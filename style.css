@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of css rest*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5f7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image: radial-gradient(#444cf7 0.65px, #e5e5f7 0.65px);
+    background-size: 1.2rem 1.2rem;
+}
+/*.lights-control{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 2rem;
+}
+.lights-label{
+    width: 4.2rem;
+    height: 2.2rem;
+    border-radius: 1.5rem;
+    background-color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 0.3rem 0.4rem;
+}
+.lights-label::after{
+    content: "";
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.lights-input{
+    display: none;
+}
+.lights-input:checked + .lights-label{
+    background-color: #fff;
+}
+.lights-input:checked + .lights-label::after{
+    transform: translate(2.1rem);
+    background-color: rgb(60, 168, 60);
+}
+*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    min-width: 35rem;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    height: 10rem;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: 
+        repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), 
+        repeating-linear-gradient(#444cf755, #444cf7);
+}
+
+.middle {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -6rem;
+    z-index: 1;
+    position: relative;
+}
+
+.pic {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.4rem solid #fff;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.position {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-top: 0.1rem solid #c4c4c4;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colum:nth-child(2) {
+    border-left: 0.1rem solid #c4c4c4;
+    border-right: 0.1rem solid #c4c4c4;
+    padding: 0 1.5rem;
+}
+
+.icons img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.username {
+    font-size: 1.2rem;
+    color: #333;
+}
