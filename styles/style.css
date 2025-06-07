@@ -1,0 +1,112 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 320px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PROFILE CARD */
+.profile-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0066cc;
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 1.5em;
+  color: #0066cc;
+}
+
+/* CONTACT ROWS */
+.bottom .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+.icons:hover img {
+  transform: scale(1.1);
+}
+.icons {
+  display: inline-block;
+}
+
+/* PROJECT CARD */
+.title {
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #0066cc;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.type {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.stack-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.language {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+
